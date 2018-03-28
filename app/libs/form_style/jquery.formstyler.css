@@ -1,0 +1,614 @@
+.jq-checkbox {
+    top: -1px;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    margin: 0 10px 0 0;
+	border: 1px solid #d1d6de;
+    border-radius: 3px;
+    background: #Fff;
+    cursor: pointer;
+
+}
+.jq-checkbox.checked .jq-checkbox__div {
+    width: 16px;
+    height: 17px;
+    margin: -1px;
+    border-radius: 0;
+    background-color: #fff;
+    background-image: url("../../img/checked.svg");
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+
+.jq-checkbox.disabled {
+	opacity: .55;
+}
+
+
+.jq-radio {
+    top: -1px;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px 0 0;
+    border: 1px solid #C3C3C3;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+.jq-radio.checked .jq-radio__div {
+    width: 10px;
+    height: 10px;
+    margin: 3px 0 0 3px;
+    border-radius: 50%;
+    background: #fff;
+}
+.jq-radio.checked {
+   
+    background: #bf0d3e;
+   	border: 1px solid #bf0d3e;
+}
+.jq-radio.disabled {
+	opacity: .55;
+}
+
+
+.jq-file {
+	width: 233px;
+	
+}
+.jq-file input {
+	height: auto;
+	line-height: 1em;
+	cursor: pointer;
+}
+.jq-file__name {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 129px;
+    height: 34px;
+    padding: 0 7px;
+    border: none;
+    border-radius: 0;
+    background: #FFF;
+    color: #333;
+    float: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    line-height: 35px;
+}
+.jq-file__browse {
+    position: relative;
+    padding: 3px 16px;
+    border-radius: 0;
+    background: #ffffff;
+    color: #333;
+    font-size: 13px;
+    float: left;
+    border: 1px solid #dbdbdb;
+    top: 6px;
+    cursor: pointer;
+}
+.jq-file:hover .jq-file__browse {
+	background: #E6E6E6;
+	background: -webkit-linear-gradient(#F6F6F6, #E6E6E6);
+	background:         linear-gradient(#F6F6F6, #E6E6E6);
+}
+.jq-file:active .jq-file__browse {
+	background: #F5F5F5;
+	box-shadow: inset 1px 1px 3px #DDD;
+}
+.jq-file.focused .jq-file__name {
+	border: 1px solid #5794BF;
+}
+.jq-file.disabled,
+.jq-file.disabled .jq-file__name,
+.jq-file.disabled .jq-file__browse {
+	border-color: #CCC;
+	background: #F5F5F5;
+	box-shadow: none;
+	color: #888;
+}
+
+
+.jq-number {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 36px 0 0;
+}
+.jq-number__field {
+	width: 100px;
+	
+	
+	border-radius: 4px;
+	
+}
+.jq-number__field:hover {
+	border-color: #B3B3B3;
+}
+.jq-number__field input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 9px;
+    
+    outline: none;
+    background: none;
+   	border-color: #f3f4f7;
+    color: #333;
+    text-align: left;
+    -moz-appearance: textfield;
+    line-height: 23px;
+    height: 32px;
+}
+.jq-number__field input::-webkit-inner-spin-button,
+.jq-number__field input::-webkit-outer-spin-button {
+	margin: 0; /* в каких-то браузерах присутствует отступ */
+	-webkit-appearance: none;
+}
+.jq-number__spin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px!important;
+    -ms-user-select: none;
+    background-color: #f3f4f7;
+}
+.jq-number__spin.minus {
+	top: auto;
+	bottom: 0;
+}
+.jq-number__spin:hover {
+	background: #E6E6E6;
+	
+}
+.jq-number__spin:active {
+	background: #F5F5F5;
+	box-shadow: inset 1px 1px 3px #DDD;
+}
+.jq-number__spin:after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 11px;
+	width: 0;
+	height: 0;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #999;
+	border-left: 5px solid transparent;
+}
+.jq-number__spin.minus:after {
+	top: 5px;
+	border-top: 5px solid #999;
+	border-right: 5px solid transparent;
+	border-bottom: none;
+	border-left: 5px solid transparent;
+}
+.jq-number__spin.minus:hover:after {
+	border-top-color: #000;
+}
+.jq-number__spin.plus:hover:after {
+	border-bottom-color: #000;
+}
+.jq-number.focused .jq-number__field {
+	border: 1px solid #5794BF;
+}
+.jq-number.disabled .jq-number__field,
+.jq-number.disabled .jq-number__spin {
+	border-color: #CCC;
+	background: #F5F5F5;
+	box-shadow: none;
+	color: #888;
+}
+.jq-number.disabled .jq-number__spin:after {
+	border-bottom-color: #AAA;
+}
+.jq-number.disabled .jq-number__spin.minus:after {
+	border-top-color: #AAA;
+}
+
+
+.jq-selectbox {
+	vertical-align: middle;
+	cursor: pointer;
+
+	outline: none!important;
+	width: 100%;
+}
+.jq-selectbox__select {
+	height: 40px;
+	padding: 0px 45px 0 13px;
+	border: 1px solid #d1d6de;
+	-webkit-border-radius: 0;
+	border-radius: 3px;
+	background: #ffffff;
+	color: #7b8493;
+	font-family: 'roboto', serif;
+}
+
+
+
+.jq-selectbox.disabled .jq-selectbox__select {
+	border-color: #CCC;
+	background: #F5F5F5;
+	box-shadow: none;
+	color: #888;
+}
+.jq-selectbox__select-text {
+	display: block;
+	overflow: hidden;
+	width: 100%!important;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 40px;
+	line-height: 40px;
+
+	font-size: 14px;
+}
+.jq-selectbox .placeholder {
+	color: #888;
+}
+.jq-selectbox__trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 34px;
+	height: 100%;
+
+}
+.jq-selectbox__trigger-arrow {
+	position: absolute;
+	top: 15px;
+
+	background-image: url(../img/next.svg);
+	position: absolute;
+	display: inline-block;
+	width: 13px;
+	height: 10px;
+	z-index: 10;
+	right: 13px;
+	background-size: 13px;
+	background-repeat: no-repeat;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+	border-top-color: #000;
+}
+.jq-selectbox.disabled .jq-selectbox__trigger-arrow {
+	border-top-color: #AAA;
+}
+.jq-selectbox__dropdown {
+	box-sizing: border-box;
+	width: 100%;
+	margin:  0;
+	padding: 0;
+	border: 1px solid #d1d6de;
+	border-radius: 3px;
+	background: #FFF;
+	font-size: 14px;
+	margin-top: 5px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+.jq-selectbox__search {
+	margin: 5px;
+}
+.jq-selectbox__search input {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	padding: 5px 27px 6px 8px;
+	border: 1px solid #d1d6de;
+	border-radius: 3px;
+	outline: none;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1JREFUeNqU078LAXEYx/FzYfNzk5TJaFNKYjFYSQZ/hvwBsvg1UCY2xT9gM8hukQGThWRjkcFw3pdnujhfT736Xn2fPvfc3fd07V0OFDDFAnM0ENYsZRiGLSc9OpqIYIA9fMhhjCrW2h9VlMlcH/aymMGtOqEugX08PwQucUZKdTozMIqdTc9WepQD7wjY9ARx+ydwhfyXfS+S0qMcOEQJGcueB3VccFINdMgal6NzkmPjRwJXxDBB7/2RDdtAp6wb+dpphHDASG5QQ0V6u2aoSqBZD/lDrNWRJynLK2qpBn4rc6K2XB9/Nb8EGABtf1thzY6X2AAAAABJRU5ErkJggg==) no-repeat 100% 50%;
+	box-shadow: inset 1px 1px #F1F1F1;
+	color: #333;
+	-webkit-appearance: textfield;
+}
+.jq-selectbox__search input::-webkit-search-cancel-button,
+.jq-selectbox__search input::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+.jq-selectbox__not-found {
+	margin: 5px;
+	padding: 5px 8px 6px;
+	background: #F0F0F0;
+	font-size: 13px;
+}
+.jq-selectbox ul {
+	margin: 0;
+	padding: 0;
+}
+.jq-selectbox li {
+	min-height: 24px;
+	padding: 8px 10px 8px;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	white-space: nowrap;
+	color: #000;
+	font-family: 'roboto', serif;
+}
+.jq-selectbox li.selected {
+	background-color: #f8f8f8;
+	color: #000;
+}
+.jq-selectbox li:hover {
+	background-color: #f8f8f8;
+	color: #000;
+}
+.jq-selectbox li.disabled {
+	color: #AAA;
+}
+.jq-selectbox li.disabled:hover {
+	background: none;
+}
+.jq-selectbox li.optgroup {
+	font-weight: bold;
+}
+.jq-selectbox li.optgroup:hover {
+	background: none;
+	color: #231F20;
+	cursor: default;
+}
+.jq-selectbox li.option {
+	padding-left: 25px;
+}
+
+
+.jq-select-multiple {
+	box-sizing: border-box;
+	padding: 1px;
+	border: 1px solid #CCC;
+	border-bottom-color: #B3B3B3;
+	border-radius: 4px;
+	background: #FFF;
+	box-shadow: inset 1px 1px #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
+	font: 14px/18px Arial, sans-serif;
+	color: #333;
+	cursor: default;
+}
+.jq-select-multiple.focused {
+	border: 1px solid #5794BF;
+}
+.jq-select-multiple.disabled {
+	border-color: #CCC;
+	background: #F5F5F5;
+	box-shadow: none;
+	color: #888;
+}
+.jq-select-multiple ul {
+	margin: 0;
+	padding: 0;
+}
+.jq-select-multiple li {
+	padding: 3px 9px 4px;
+	list-style: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	white-space: nowrap;
+}
+.jq-select-multiple li:first-child {
+	border-radius: 3px 3px 0 0;
+}
+.jq-select-multiple li:last-child {
+	border-radius: 0 0 3px 3px;
+}
+.jq-select-multiple li.selected {
+	background: #08C;
+	color: #FFF;
+}
+.jq-select-multiple li.disabled {
+	color: #AAA;
+}
+.jq-select-multiple.disabled li.selected,
+.jq-select-multiple li.selected.disabled {
+	background: #CCC;
+	color: #FFF;
+}
+.jq-select-multiple li.optgroup {
+	font-weight: bold;
+}
+.jq-select-multiple li.option {
+	padding-left: 25px;
+}
+
+.number-plus-minus .jq-number {
+	padding: 0 38px;
+}
+.number-plus-minus .jq-number__field {
+    width: 44px;
+    height: 32px;
+    border-radius: 0;
+    box-shadow: none;
+    line-height: 32px
+}
+.number-plus-minus .jq-number__field input {
+	text-align: center;
+}
+.number-plus-minus .jq-number__spin {
+	left: 0;
+	height: 32px;
+}
+.number-plus-minus .jq-number__spin.plus {
+	right: 0;
+	left: auto;
+}
+.number-plus-minus .jq-number__spin:before {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 12px;
+	height: 2px;
+	border: none;
+	background: #666;
+}
+.number-plus-minus .jq-number__spin.minus:after {
+	display: none;
+}
+.number-plus-minus .jq-number__spin.plus:after {
+	top: 10px;
+	left: 15px;
+	width: 2px;
+	height: 12px;
+	border: none;
+	background: #666;
+}
+.number-plus-minus .jq-number__spin:hover:before,
+.number-plus-minus .jq-number__spin.plus:hover:after {
+	background: #000;
+}
+
+
+
+.slider-labels {
+  margin-top: 10px;
+}
+
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+}
+
+.noUi-target {
+  position: relative;
+  direction: ltr;
+}
+
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+/* Fix 401 */
+}
+
+.noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+
+.noUi-stacking .noUi-handle {
+/* This class is applied to the lower origin when
+   its values is > 50%. */
+  z-index: 10;
+}
+
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s,top .3s;
+  transition: left 0.3s,top .3s;
+}
+
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+.noUi-base,.noUi-handle {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 3px;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: -7px;
+    top: -6px;
+    background-color: #ffffff;
+}
+/* Styling;
+ */
+.noUi-background {
+      background: #ffffff;
+}
+
+.noUi-connect {
+    background-color: #bf0d3e;
+    -webkit-transition: background 450ms;
+    transition: background 450ms;
+}
+
+.noUi-origin {
+  border-radius: 2px;
+}
+
+.noUi-target {
+  border-radius: 2px;
+}
+
+.noUi-target.noUi-connect {
+}
+
+/* Handles and cursors;
+ */
+.noUi-draggable {
+  cursor: w-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: n-resize;
+}
+
+.noUi-handle {
+  cursor: default;
+  box-sizing: content-box !important;
+}
+
+.noUi-handle:active {
+  border: 8px solid  rgba(191, 13, 62, 0.37);
+  
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px;
+}
+
+/* Disabled state;
+ */
+[disabled].noUi-connect,[disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+[disabled].noUi-origin,[disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+

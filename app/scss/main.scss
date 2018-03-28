@@ -2,9 +2,11 @@
 @import "fonts";
 @import "libs";
 @import "header";
+@import "main_page";
 
 ::placeholder {
-	color: #666;
+  color: #c5c5c5;
+  font-weight: 300;
 }
 
 ::selection {
