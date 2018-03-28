@@ -61,19 +61,34 @@ a {
   cursor: pointer;
   &:hover, &:active, &:focus {
     text-decoration: none;
-    -moz-transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+
+    transition: all 0.3s ease;
     outline: none;
     border: none;
   }
 }
 
-button {
+button{
+  outline: none!important;
+}
+
+.button {
   outline: none !important;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  ont-size: 14px;
+  font-weight: 300;
+
+  text-transform: uppercase;
+  border-radius: 21px;
+  color: #fff;
+  padding: 0 35px;
+  background-color: #6477ff;
+  background-image: linear-gradient(-92deg, rgba(72, 188, 255, 0.51) 0%, rgba(255, 0, 0, 0.51) 100%);
   &:hover {
-    opacity: 0.8;
+    background-image: linear-gradient(-92deg, rgba(255, 0, 0, 0.51) 100%, rgba(72, 188, 255, 0.51) 0%);
+    color: #fff;
   }
 }
 

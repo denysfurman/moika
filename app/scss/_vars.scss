@@ -10,3 +10,64 @@ $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1170px);
 
 $gutter: $grid-gutter-width;
+
+@mixin media($media) {
+  @if $media == phone {
+    @media (max-width: 767px) { @content; }
+  }
+  @else if $media == phoneb {
+    @media (min-width: 370px) and (max-width: 767px) { @content; }
+  }
+  @else if $media == tabv {
+    @media (min-width: 768px) and (max-width: 991px) { @content; }
+  }
+  @else if $media == tabh {
+    @media (min-width: 992px) and (max-width: 1200px) { @content; }
+  }
+  @else if $media == tab {
+    @media (min-width: 768px) and (max-width: 1200px) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: 1201px) and (max-width: 1650px) { @content; }
+  }
+  @else if $media == lg_h {
+    @media (min-width: 1450px)  { @content; }
+  }
+  @else if $media == xl {
+    @media (min-width: 1930px) { @content; }
+  }
+}
+
+@mixin font{
+  font-family: 'katoob' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin btn($color){
+  text-decoration: none !important;
+  min-width: 197px;
+  padding: 10px 15px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  color: #fff !important;
+  text-transform: uppercase;
+  border-radius: 40px 0 40px;
+  background: $color;
+  transition: .4s;
+  border: none;
+  .android &,
+  .windows &{
+    padding: 13px 30px 7px;
+  }
+  &:hover{
+    background: $color_brand;
+  }
+}
