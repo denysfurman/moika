@@ -12,7 +12,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  background-color: rgba(72, 188, 255, 0.6);
+  background-color: rgba(49, 160, 224, 0.6);
   min-height: 600px;
   padding: 50px 0;
 }
@@ -23,7 +23,7 @@ section {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 57px;
+    margin-bottom: 37px;
     position: relative;
     text-transform: inherit;
   }
@@ -53,6 +53,12 @@ section {
   align-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  z-index: 0;
+  @include media(tab){
+    margin-bottom: 30px;
+  }
+
 
   &_icon{
 
@@ -66,9 +72,26 @@ section {
     justify-content: center;
     align-content: center;
     align-items: center;
+    position: relative;
+
     &.active{
       border: 1px solid #fff;
+      //&::before{
+      //  content: "";
+      //  display: inline-block;
+      //  width: 710px;
+      //  position: absolute;
+      //  z-index: -1;
+      //  height: 1px;
+      //  background-color: #fff;
+      //  right: -710px;
+      //}
+      @include media(tab){
+        display: none;
+      }
+
     }
+
 
 
     &_overlay{
@@ -336,6 +359,9 @@ section {
     z-index: -1;
 
     opacity: 0.7;
+    @include media(tab){
+      display: none;
+    }
   }
   &__button{
     display: flex;
@@ -391,4 +417,100 @@ footer{
     margin-top: -550px;
   }
 
+}
+
+.main-used__item{
+  flex-direction: column;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  &.line_3::before{
+     content: "";
+     display: inline-block;
+     background-image: url(../img/line.png);
+     position: absolute;
+     width: 258px;
+     height: 44px;
+     z-index: 2;
+     left: -217px;
+     transform: rotatex(-180deg);
+     top: 27px;
+      @include media(tab){
+         display: none;
+       }
+  }
+
+  &.line_1::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/line.png);
+    position: absolute;
+    width: 262px;
+    height: 44px;
+    z-index: 2;
+    right: -213px;
+    top: 89px;
+    @include media(tab){
+      display: none;
+    }
+  }
+
+  &_icon{
+
+    width: 180px;
+    height: 150px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url("../img/used_share.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    i{
+      font-size: 50px;
+      color: rgba(255, 255, 255, 0.71);
+    }
+    .icon-car:before{
+      color: rgba(255, 255, 255, 0.51);
+    }
+    &.active{
+      background-image: url("../img/usser_share_act.png");
+      width: 220px;
+      height: 170px;
+      i{
+        color: #fff;
+      }
+      .icon-car:before{
+        color: #fff;
+      }
+    }
+
+
+
+
+  }
+
+  &_title{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+
+  }
+  p{
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.8;
+    font-weight: 300;
+  }
 }

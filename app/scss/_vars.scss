@@ -25,7 +25,7 @@ $gutter: $grid-gutter-width;
     @media (min-width: 992px) and (max-width: 1200px) { @content; }
   }
   @else if $media == tab {
-    @media (min-width: 768px) and (max-width: 1200px) { @content; }
+    @media (max-width: 1200px) { @content; }
   }
   @else if $media == lg {
     @media (min-width: 1201px) and (max-width: 1650px) { @content; }
