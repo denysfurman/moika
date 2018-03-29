@@ -8,6 +8,7 @@
   background-position: center;
   background-attachment: fixed;
   padding-top: 24px;
+  position: relative;
 }
 .main-header__topline{
   display: flex;
@@ -51,7 +52,16 @@
         background-color: transparent;
         font-size: 16px;
         text-transform: capitalize;
+        &:after{
+          display: none;
+        }
+        &:hover{
+          border: 1px solid #b64990;
+          background-color: #b64990  ;
+
+        }
       }
+
     }
     &.registration_link{
       margin-right: 0;
@@ -71,6 +81,9 @@
           background-image: linear-gradient(-92deg, rgba(255, 0, 0, 0.51) 100%, rgba(72, 188, 255, 0.51) 0%);
           color: #fff;
         }
+        &:after{
+          display: none;
+        }
       }
 
     }
@@ -78,7 +91,7 @@
   }
   a{
     color: #ffffff;
-
+    position: relative;
     font-size: 16px;
     font-weight: 300;
     line-height: 39px;
@@ -86,12 +99,43 @@
     &.active{
       font-weight: 400;
     }
+
+
+  }
+
+  a:after {
+    position: absolute;
+
+
+    left: 50%;
+    right: 50%;
+
+
+
+    height: 2px;
+    bottom: 7px;
+    content: "";
+
+    background: linear-gradient(92deg, rgba(186, 70, 139, 1) 30%, rgba(140, 139, 203, 1) 100%);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: translate3d(0, 0, 0);
+  }
+  a.active:after {
+    left: 0;
+    right: 50%;
+  }
+
+  a:hover:after {
+    left: 0;
+    right: 0;
   }
 }
 .main-header_center{
   width: 100%;
   display: flex;
   flex-direction: column;
+  -ms-flex-direction: column;
+  flex-wrap: wrap;
 
   flex-wrap: nowrap;
   justify-content: center;

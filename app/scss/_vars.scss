@@ -15,15 +15,11 @@ $gutter: $grid-gutter-width;
   @if $media == phone {
     @media (max-width: 767px) { @content; }
   }
-  @else if $media == phoneb {
-    @media (min-width: 370px) and (max-width: 767px) { @content; }
-  }
+
   @else if $media == tabv {
-    @media (min-width: 768px) and (max-width: 991px) { @content; }
+    @media (max-width: 991px) { @content; }
   }
-  @else if $media == tabh {
-    @media (min-width: 992px) and (max-width: 1200px) { @content; }
-  }
+
   @else if $media == tab {
     @media (max-width: 1200px) { @content; }
   }
