@@ -7,6 +7,8 @@ $(function() {
         items:1
     });
 
+
+
     $('.menu-button').on('click', function() {
 
         $(this).toggleClass('active');
@@ -14,6 +16,8 @@ $(function() {
 
 
     });
+
+
 
     //animated
     $('.car_help').addClass('animated bounceInLeft');

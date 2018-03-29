@@ -29,6 +29,9 @@
     clip-path: polygon(0% 0,100% 0,100% 100%,0 100%);
     padding: 44px 29px 40px;
   }
+  .main-serviced__right .main-serviced__left_content_butt {
+    margin-top: 48px;
+  }
 
 }
 
@@ -223,7 +226,7 @@
     top: 50px;
     right: 0;
     z-index: 100;
-    background-color: #333;
+    background-color: #111;
     padding: 25px 10px;
     width: calc(100% + 30px);
     left: -15px;
