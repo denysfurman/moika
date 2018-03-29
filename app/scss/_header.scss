@@ -22,7 +22,7 @@
   font-weight: 400;
   color: #fff;
   &:hover {
-    background: linear-gradient(-92deg, rgba(72, 188, 255, 0.81) 30%, rgba(255, 0, 0, 1) 100%);
+    background: linear-gradient(92deg, rgba(186, 70, 139, 1) 30%, rgba(140, 139, 203, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -65,8 +65,14 @@
         background-color: #6477ff;
         background-image: linear-gradient(-92deg, rgba(72, 188, 255, 0.51) 0%, rgba(255, 0, 0, 0.51) 100%);
         font-size: 16px;
-        text-transform: capitalize
+        text-transform: capitalize;
+        &:hover {
+          background-color: #6477ff;
+          background-image: linear-gradient(-92deg, rgba(255, 0, 0, 0.51) 100%, rgba(72, 188, 255, 0.51) 0%);
+          color: #fff;
+        }
       }
+
     }
 
   }
@@ -123,6 +129,7 @@
     height: 46px;
     border-radius: 21px 0px 0px 21px;
     background-color: #ffffff;
+    border: none;
     margin: 0;
   }
   .search_button{
@@ -135,5 +142,11 @@
     font-weight: 300;
     text-transform: uppercase;
     font-size: 14px;
+    border: none;
+    &:hover {
+      background-color: #6477ff;
+      background-image: linear-gradient(-92deg, rgba(255, 0, 0, 0.51) 100%, rgba(72, 188, 255, 0.51) 0%);
+      color: #fff;
+    }
   }
 }

@@ -20,8 +20,8 @@ gulp.task('browser-sync', function() {
 		},
 		notify: false,
 		// open: false,
-		tunnel: true,
-		tunnel: "proje", //Demonstration page: http://projectname.localtunnel.me
+		//tunnel: true,
+		//tunnel: "proje", //Demonstration page: http://projectname.localtunnel.me
 	})
 });
 

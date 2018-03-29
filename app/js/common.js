@@ -8,6 +8,7 @@ $(function() {
     });
 
     //animated
-    $('.car_help').addClass('animated bounceInLeft')
+    $('.car_help').addClass('animated bounceInLeft');
+    $('.main-serviced__img-car').addClass('animated bounceInRight');
 
 });
