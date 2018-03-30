@@ -747,6 +747,7 @@ section {
         text-align: center;
         margin-bottom: 40px;
         margin-top: 70px;
+
       }
       img{
         width: 150px;
@@ -769,4 +770,16 @@ section {
 
 
   animation-delay: 2s;
+}
+.main-used__item {
+  .main-used__item_icon i{
+    &:before {
+      color: rgba(255, 255, 255, .71);
+    }
+  }
+  &:hover .main-used__item_icon i{
+    &:before {
+      color: #fff;
+    }
+  }
 }

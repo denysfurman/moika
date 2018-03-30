@@ -41,6 +41,10 @@
   .text_page_title P{
     padding: 0;
   }
+  .text_page_title P {
+
+    margin-top: 30px;
+  }
 
 }
 
@@ -158,7 +162,7 @@
     display: inline-block;
     width: 100%;
     margin-top: 24px;
-    margin-bottom: 42px;
+
   }
   .about_img img {
     width: 100%;
@@ -180,6 +184,9 @@
     width: 100%;
     background-color: #fff;
     padding: 34px 0;
+  }
+  .content.text {
+    padding: 0;
   }
 
 }
