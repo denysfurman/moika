@@ -1,0 +1,103 @@
+.price-section{
+  width: 100%;
+  background-color: #ffffff;
+  padding: 40px 0;
+
+  &__item{
+    background-color: #c6e1f1;
+    padding: 30px 10px 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 100%;
+    position: relative;
+
+    &_title{
+      font-size: 24px;
+      font-weight: 700;
+      color: #1d3543;
+      margin-bottom: 20px;
+      
+    }
+    &_icon{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      background-image: url("../img/p_1.png");
+      width: 107px;
+      height: 129px;
+      background-size: contain;
+      margin-bottom: 20px;
+      &.price_icon_2{
+        background-image: url("../img/p_2.png");
+      }
+      &.price_icon_3{
+        background-image: url("../img/p_3.png");
+      }
+      &.price_icon_4{
+        background-image: url("../img/p_4.png");
+      }
+
+      span{
+        color: #fff;
+        font-weight: 200;
+        font-size: 27px;
+        margin-top: -15px;
+      }
+    }
+    &_price{
+      width: 100%;
+      background-color: #fff;
+      padding: 30px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      ul{
+        padding-left: 20px;
+        li{
+          font-size: 14px;
+          margin-bottom: 15px;
+          position: relative;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #339fdc;
+            left: -20px;
+            top: 4px;
+            font-size: 14px;
+
+          }
+        }
+      }
+    }
+    &_button{
+      position: absolute;
+      bottom: 30px;
+      left: 10px;
+      right: 10px;
+      width: calc(100% - 20px);
+    }
+  }
+}
+
+.price_help{
+  margin-top: 20px;
+  text-align: center;
+  h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+  }
+  p{
+    margin-bottom: 20px;
+  }
+}

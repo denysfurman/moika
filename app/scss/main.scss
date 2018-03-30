@@ -376,10 +376,30 @@ body {
 }
 
 
+.button_blue{
+  height: 56px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.17);
+  background-color: #48bcff;
+  text-align: center;
+  line-height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+  color: #fff;
+  &:hover{
+    color: #fff;
+    background-color: #28a2df;
+  }
+}
+
 
 @import "main_page";
 @import "footer";
 @import "header_text";
 @import "about";
 @import "faq";
+@import "price";
 @import "media"; // Always at the end
