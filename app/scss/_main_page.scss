@@ -467,36 +467,36 @@ section {
   text-align: center;
   margin-top: 20px;
   position: relative;
-  //&.line_3::before{
-  //   content: "";
-  //   display: inline-block;
-  //   background-image: url(../img/line.png);
-  //   position: absolute;
-  //   width: 258px;
-  //   height: 44px;
-  //   z-index: 2;
-  //   left: -217px;
-  //   transform: rotatex(-180deg);
-  //   top: 27px;
-  //    @include media(tab){
-  //       display: none;
-  //     }
-  //}
-  //
-  //&.line_1::before{
-  //  content: "";
-  //  display: inline-block;
-  //  background-image: url(../img/line.png);
-  //  position: absolute;
-  //  width: 285px;
-  //  height: 44px;
-  //  z-index: 2;
-  //  right: -231px;
-  //  top: 93px;
-  //  @include media(tab){
-  //    display: none;
-  //  }
-  //}
+  &.line_3::before{
+     content: "";
+     display: inline-block;
+     background-image: url(../img/line.png);
+     position: absolute;
+     width: 258px;
+     height: 44px;
+     z-index: 2;
+     left: -217px;
+     transform: rotatex(-180deg);
+     top: 27px;
+      @include media(tab){
+         display: none;
+       }
+  }
+
+  &.line_1::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/line.png);
+    position: absolute;
+    width: 285px;
+    height: 44px;
+    z-index: 2;
+    right: -231px;
+    top: 93px;
+    @include media(tab){
+      display: none;
+    }
+  }
   &_icon{
     width: 180px;
     height: 150px;
@@ -575,19 +575,44 @@ section {
 }
 .main-used__item.line_1:hover{
   &:before{
+    transition: all 0.2s ease;
     width: 266px ;
   }
 }
 .main-used__item.line_2:hover  {
   &:before {
+    transition: all 0.2s ease;
     width: 266px;
   }
 }
+
+.main-used__item.line_1{
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+.main-used__item.line_2{
+  z-index: 19;
+  transition: all 0.2s ease;
+}
+.main-used__item.line_3{
+  z-index: 20;
+  transition: all 0.2s ease;
+}
+
 .main-used__item.line_3:hover{
   &:before{
     width: 243px ;
   }
 }
+.main-used__item.line_2:hover .main-used__item_icon {
+
+  width: 220px;
+  height: 170px;
+  transform: scale3d(0.9,0.9,0.9);
+  margin-left: 18px;
+
+}
+
 .main-serviced__right .main-serviced__left_content_butt{
   margin-top: 149px;
 }

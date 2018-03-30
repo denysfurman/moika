@@ -1,0 +1,105 @@
+.about_values{
+  width: 100%;
+  background-color: #ffffff;
+  padding: 70px 0;
+
+}
+.about_values h2{
+  text-transform: uppercase;
+}
+
+.about_values__item{
+  flex-direction: column;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+
+
+
+  &_icon{
+
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+
+
+
+    &_overlay{
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 1px dashed rgb(0, 0, 0);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+    }
+    &_overlay2{
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      i{
+        font-size: 50px;
+        color: #000;
+        &:before{
+          color: #000;
+        }
+      }
+
+    }
+
+
+  }
+
+
+  &_title{
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+
+  }
+  p{
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.8;
+  }
+}
+
+.about_img{
+  margin-top: 70px;
+  img{
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+}

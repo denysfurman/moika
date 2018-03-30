@@ -1,13 +1,10 @@
-@import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
 @font-face {
   font-family: 'icomoon';
   src:  url('../libs/icomoon/fonts/icomoon.eot?wahmbo');
   src:  url('../libs/icomoon/fonts/icomoon.eot?wahmbo#iefix') format('embedded-opentype'),
   url('../libs/icomoon/fonts/icomoon.ttf?wahmbo') format('truetype'),
-  url('../libsiicomoon/fonts/icomoon.woff?wahmbo') format('woff'),
+  url('../libs/icomoon/fonts/icomoon.woff?wahmbo') format('woff'),
   url('../libs/icomoon/fonts/icomoon.svg?wahmbo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -28,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-booking:before {
+  content: "\e92e";
+  color: #fff;
+}
+.icon-spray:before {
+  content: "\e92f";
+  color: #fff;
+}
 .icon-calendar:before {
   content: "\e922";
   color: #fff;
@@ -178,6 +183,7 @@
 .icon-icon_33:before {
   content: "\e921";
 }
+
 
 
 // Purty Menu Button
