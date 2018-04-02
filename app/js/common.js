@@ -37,6 +37,11 @@ $(function() {
 
     });
 
+    // form
+    $('.form_style').styler({
+        selectSearch: true
+    });
+
 
 
     //animated

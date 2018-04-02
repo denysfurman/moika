@@ -2,6 +2,8 @@
 @import "fonts";
 @import "libs";
 @import "header";
+@import "header_text";
+@import "header_lk";
 
 
 ::placeholder {
@@ -228,6 +230,9 @@ textarea {
 input {
   &[type="email"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="text"]:focus, &[type="tel"]:focus, &[type="url"]:focus:focus, &[type="password"]:focus {
     outline: none;
+    background-color: #fff;
+
+
   }
 }
 
@@ -266,7 +271,7 @@ body {
     box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 	input, textarea {
-			border: #666 1px solid;
+
 			outline: none;
 			&:focus:required:invalid {
 				border-color: red;
@@ -315,6 +320,17 @@ body {
     /* Text style for "Car detail" */
     letter-spacing: 7.68px;
     margin-top: 5px;
+    &.not_space{
+      letter-spacing: 3px;
+    }
+    a{
+      color: #48bcff;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
   }
   &_line{
     height: 3px;
@@ -398,8 +414,10 @@ body {
 
 @import "main_page";
 @import "footer";
-@import "header_text";
+
 @import "about";
 @import "faq";
 @import "price";
+@import "reg";
+
 @import "media"; // Always at the end
