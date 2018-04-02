@@ -1,0 +1,78 @@
+.personal-sitebar{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 2px 27px rgba(0, 0, 0, 0.08);
+  &__foto{
+    height: 218px;
+    border-radius: 5px 5px 0 0;
+    background-color: #ffffff;
+    background-image: linear-gradient(33deg, rgba(72, 188, 255, 0.6) 0%, rgba(255, 0, 0, 0.6) 100%);
+    padding: 20px;
+    &_img{
+      display: table;
+      margin: 20px auto 10px;
+      img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+    }
+    span{
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 24px;
+      font-weight: 300;
+      display: block;
+      margin-top: 0;
+    }
+  }
+  &__menu{
+    background-color: #fff;
+    li a{
+      width: 100%;
+      line-height: 46px;
+      border-bottom: 1px solid #e2e2e2;
+      font-size: 16px;
+      padding: 0 20px ;
+      &:hover{
+        background-image: linear-gradient(33deg, rgba(72, 188, 255, 0.8) 0%, rgba(255, 0, 0, 0.6) 100%);
+        color: #fff;
+
+      }
+      &.active{
+        background-image: linear-gradient(33deg, rgba(72, 188, 255, 1) 0%, rgba(255, 0, 0, 0.6) 100%);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.personal-sitebar__meet{
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  a{
+    width: 100%;
+    height: 238px;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.17);
+    border-radius: 5px;
+    background-color: #48bcff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    span span{
+      display: block;
+      font-size: 45px;
+      text-transform: uppercase;
+
+    }
+  }
+}

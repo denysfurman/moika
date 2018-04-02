@@ -10,9 +10,9 @@ $(function() {
     $(window).scroll(function () {
         var sc = $(window).scrollTop()
         if (sc > 80) {
-            $(".main-header__topline").addClass("header-sroll")
+            $(".main-header .main-header__topline , .text-header .main-header__topline").addClass("header-sroll");
         } else {
-            $(".main-header__topline").removeClass("header-sroll")
+            $(".main-header .main-header__topline , .text-header .main-header__topline").removeClass("header-sroll");
         }
     });
 

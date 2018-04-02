@@ -2,9 +2,19 @@
 
   width: 100%;
   padding-top: 25px;
-  color: #fff;
-  background-color: #232734;
+  color: #000;
+  background-color: #f9f9f9;
   height: 90px;
+  padding: 25px 10px 0;
+  box-shadow: 5px 3px 13px rgba(0, 0, 0, 0.09);
+  .main-header__topline_nav a {
+    color: #000;
+
+  }
+  .main-header__topline_logo {
+
+    color: #000;
+  }
 }
 .main-header__topline{
   display: flex;
@@ -14,10 +24,29 @@
   justify-content: space-between;
 
 }
-
 .lk_page{
-  padding-bottom: 400px;
   min-height: 600px;
   background-color: #edeef2;
-  padding-top: 70px;
+  padding-bottom: 400px;
+  padding-top: 50px;
+}
+.personal_link{
+  img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  i{
+    color: #000;
+    font-size: 9px;
+    margin-left: 10px;
+  }
+  a:hover{
+    border: none;
+    &:after{
+      display: none;
+    }
+  }
 }

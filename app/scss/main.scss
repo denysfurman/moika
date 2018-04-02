@@ -410,7 +410,9 @@ body {
     background-color: #28a2df;
   }
 }
-
+.container-fluid{
+  padding: 0 40px;
+}
 
 @import "main_page";
 @import "footer";
@@ -419,5 +421,6 @@ body {
 @import "faq";
 @import "price";
 @import "reg";
+@import "personal";
 
 @import "media"; // Always at the end
