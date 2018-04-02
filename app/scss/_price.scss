@@ -84,6 +84,8 @@
       left: 10px;
       right: 10px;
       width: calc(100% - 20px);
+
+
     }
   }
 }
@@ -95,9 +97,67 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
+    text-transform: uppercase;
 
   }
   p{
     margin-bottom: 20px;
+  }
+  .button_blue{
+
+    position: relative;
+    overflow: hidden;
+    &.mail:before{
+      content: "";
+      position: absolute;
+      left: -16px;
+      background-image: url(../img/mail.png);
+      width: 54px;
+      height: 44px;
+      bottom: -1px;
+    }
+    &.call:before{
+      content: "";
+      position: absolute;
+      left: 1px;
+      background-image: url(../img/call.png);
+      width: 37px;
+      height: 41px;
+      bottom: -4px;
+
+    }
+
+  }
+}
+
+.price_additional{
+  background-image: url("../img/price_table.jpg");
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  .w_line{
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  &_title{
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  ul{
+    li{
+      color: #c6e1f1;
+      font-size: 18px;
+      margin-bottom: 10px;
+      span{
+        float: right;
+      }
+    }
   }
 }

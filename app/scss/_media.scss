@@ -137,6 +137,11 @@
     padding-right: 25px ;
 
   }
+  .text_page_title_descr {
+
+    line-height: 28px;
+
+  }
 
   .menu-button{
     display: block;
@@ -155,9 +160,9 @@
   .text_page_title_descr {
     font-size: 18px;
     font-weight: 300;
-    line-height: 49px;
+    margin-top: 10px;
     letter-spacing: 1.68px;
-    margin-top: 0;
+
   }
   .text_page_title_line {
     height: 2px;
@@ -179,6 +184,9 @@
     min-height: 600px;
     background-color: #f5feff;
     padding-top: 40px;
+  }
+  .text_page_title{
+    margin-bottom: 40px;
   }
   .about_img {
     margin-top: 20px;
