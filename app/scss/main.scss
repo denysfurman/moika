@@ -410,6 +410,25 @@ body {
     background-color: #28a2df;
   }
 }
+
+.button_red{
+  height: 56px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.17);
+  background-color: #d9534f;
+  text-align: center;
+  line-height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+  color: #fff;
+  &:hover{
+    color: #fff;
+    background-color: #cb524e;
+  }
+}
 .container-fluid{
   padding: 0 40px;
 }
