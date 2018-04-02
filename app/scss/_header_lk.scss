@@ -5,8 +5,10 @@
   color: #000;
   background-color: #f9f9f9;
   height: 90px;
-  padding: 25px 10px 0;
+  padding: 25px  0 0;
   box-shadow: 5px 3px 13px rgba(0, 0, 0, 0.09);
+  position: relative;
+  z-index: 2;
   .main-header__topline_nav a {
     color: #000;
 

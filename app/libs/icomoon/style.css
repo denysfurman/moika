@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?6q95fb');
-  src:  url('fonts/icomoon.eot?6q95fb#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?6q95fb') format('truetype'),
-    url('fonts/icomoon.woff?6q95fb') format('woff'),
-    url('fonts/icomoon.svg?6q95fb#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?dd5uz6');
+  src:  url('fonts/icomoon.eot?dd5uz6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dd5uz6') format('truetype'),
+    url('fonts/icomoon.woff?dd5uz6') format('woff'),
+    url('fonts/icomoon.svg?dd5uz6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-car2:before {
+  content: "\e930";
+}
+.icon-credit-card:before {
+  content: "\e931";
+}
+.icon-day-23:before {
+  content: "\e932";
+}
+.icon-like:before {
+  content: "\e933";
+}
+.icon-placeholder:before {
+  content: "\e934";
+}
+.icon-power-button:before {
+  content: "\e935";
+}
+.icon-user:before {
+  content: "\e936";
+}
 .icon-booking:before {
   content: "\e92e";
   color: #fff;

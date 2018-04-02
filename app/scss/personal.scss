@@ -1,3 +1,28 @@
+.breakbrains{
+  width: 100%;
+  background-color: #a1dcff ;
+  padding: 15px 0;
+  ul{
+    display: flex;
+    color: #fff;
+    li{
+      margin-right: 5px;
+
+    }
+    a{
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      &.active{
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+    span{
+      margin-left: 5px;
+    }
+  }
+}
 .personal-sitebar{
   position: relative;
   display: flex;
@@ -53,7 +78,8 @@
 .personal-sitebar__meet{
   width: 100%;
   background-color: #fff;
-  padding: 10px;
+  padding: 20px 20px;
+  border-radius: 0 0 5px 5px;
   a{
     width: 100%;
     height: 238px;
@@ -68,6 +94,7 @@
     align-items: center;
     color: #fff;
     text-align: center;
+
     span span{
       display: block;
       font-size: 45px;
@@ -75,4 +102,23 @@
 
     }
   }
+}
+
+.personal_main{
+  box-shadow: 3px 2px 27px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 825px;
+  padding: 20px;
+  &_title{
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    border-bottom: 1px solid  #dfdfdf;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+
+  }
+
 }
