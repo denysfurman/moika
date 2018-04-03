@@ -16,6 +16,15 @@ $(function() {
         }
     });
 
+    //lk_menu
+    var navTrigger = document.querySelector('.nav-trigger');
+
+    navTrigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.classList.toggle('is-active');
+        $(".personal-sitebar").slideToggle();
+    }, false);
+
     //faq
     const items = document.querySelectorAll(".accordion a");
 
@@ -31,8 +40,8 @@ $(function() {
     $('.menu-button').on('click', function() {
 
         $(this).toggleClass('active');
-        $('.main-header__topline_nav').stop(true).slideToggle();
-        return false;
+        $('.main-header__topline_nav').stop(true, true).slideToggle();
+
 
 
     });

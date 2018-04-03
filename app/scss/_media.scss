@@ -49,8 +49,17 @@
     border-top: 3px solid #fff;
   }
   .text_page_title_descr {
-
     text-align: center;
+  }
+  .personal-sitebar{
+    margin-bottom: 40px;
+  }
+  .personal-sitebar{
+    display: none;
+  }
+  .nav-trigger{
+    display: inline-block;
+    margin-bottom: 20px;
   }
 
 }
@@ -203,6 +212,39 @@
   .content.text {
     padding: 0;
   }
+  .lk_page {
+    min-height: auto;
+    background-color: #edeef2;
+    padding-bottom: 60px;
+    padding-top: 33px;
+  }
+  footer.footer-lk{
+    background-image: none;
+  }
+  .container-fluid {
+    padding: 0 15px;
+  }
+  .personal_main table {
+    max-height: inherit;
+    margin-top: 0;
+  }
+  .lk-header .menu-button:after, .lk-header .menu-button:before  {
+
+    background-color: #000;
+
+  }
+  .lk-header .menu-button{
+    background: linear-gradient(transparent 0,transparent 46%,#000 46%,#000 54%,transparent 54%,transparent 100%);
+  }
+  .lk-header .main-header__topline_nav a {
+    color: #fff;
+  }
+  .personal_link i {
+    color: #fff;
+    font-size: 9px;
+    margin-left: 10px;
+  }
+
 
 }
 
@@ -375,6 +417,15 @@
   .jq-selectbox__select-text {
 
     font-size: 15px;
+  }
+  .table_pagination ul li a {
+    width: 34px;
+    height: 34px;
+
+    font-size: 14px;
+    text-align: center;
+    line-height: 33px;
+
   }
 }
 

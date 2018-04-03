@@ -432,6 +432,61 @@ body {
 .container-fluid{
   padding: 0 40px;
 }
+table{
+  border: 1px solid #dfdfdf;
+  //border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+
+  th{
+    padding: 10px 15px;
+    border: 1px solid #dfdfdf;
+    a{
+      width: 100%;
+      position: relative;
+      &:before{
+        content: "";
+        width: 11px;
+        height: 11px;
+        background-image: url("../img/arrow-down.svg");
+        background-size: 11px;
+        display: inline-block;
+        position: absolute;
+        right: 3px;
+        top: 3px
+      }
+      &.up:before{
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+  td{
+    padding: 10px 15px;
+    border: 1px solid #dfdfdf;
+  }
+  tr{
+    &:nth-child(odd) td{
+      background-color: #f9f9f9;
+    }
+  }
+  .table_checkbox{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+  }
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+
+  background-image: url(../img/check_bl.svg);
+}
 
 @import "main_page";
 @import "footer";
@@ -441,5 +496,7 @@ body {
 @import "price";
 @import "reg";
 @import "personal";
+@import "booking";
 
 @import "media"; // Always at the end
+
