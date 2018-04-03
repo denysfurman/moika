@@ -1,0 +1,141 @@
+.bookings_form{
+  width: 100%;
+  margin-top: 20px;
+  .button_blue{
+    margin-top: 0;
+    margin-bottom: 20px;
+
+  }
+
+  span.bookings_form_inform{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    display: block;
+  }
+}
+
+.bookings_form_item{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  border-top: 1px solid #dfdfdf ;
+  border-bottom: 1px solid #dfdfdf ;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-left: 15px;
+  input{
+    &[type="email"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"] {
+      font-size: 14px;
+      border: none;
+      margin-bottom: 0;
+      width: calc(100% - 160px);
+    }
+
+  }
+  label{
+    width: 160px;
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .jq-selectbox__select-text {
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 12px;
+
+
+    width: 14px;
+    height: 14px;
+    z-index: 10;
+    right: 16px;
+
+    background-size: 13px;
+    background-repeat: no-repeat;
+  }
+  .jq-selectbox__dropdown {
+
+    border: 1px solid rgb(209, 214, 222);
+    margin: 0;
+    margin-top: 2px;
+  }
+  .jq-selectbox__select{
+    padding-left: 0;
+  }
+
+  &.select_number{
+    .jq-selectbox {
+      font-size: 14px;
+      width: 100px;
+      position: relative;
+
+    }
+    input{
+      width: calc(100% - 260px);
+    }
+
+  }
+
+  &.select_all{
+    .jq-selectbox {
+      font-size: 14px;
+      width: calc(100% - 160px);
+      position: relative;
+
+    }
+
+
+  }
+}
+
+.bookings_form_item_inf{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding:  15px;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  span{
+    display: block;
+  }
+  label{
+    margin: 0;
+  }
+  p{
+    margin-top: 10px;
+  }
+}
+
+
+.booking_tarif_item{
+  background-color: #52c4ff;
+  &.item_1{
+    background-color: #52c4ff;
+  }
+  &.item_2{
+    background-color: #ff489a;
+  }
+  &.item_3{
+    background-color: #ff486a;
+  }
+  &.item_4{
+    background-color: #ff4851;
+  }
+  .price-section__item_title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}

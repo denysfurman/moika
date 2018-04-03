@@ -1,5 +1,4 @@
 $(function() {
-
     //main_slider
     $('.main-slider__wrap').owlCarousel({
         loop: true,
@@ -15,46 +14,34 @@ $(function() {
             $(".main-header .main-header__topline , .text-header .main-header__topline").removeClass("header-sroll");
         }
     });
-
-    //lk_menu
-    var navTrigger = document.querySelector('.nav-trigger');
-
-    navTrigger.addEventListener('click', function(e) {
-        e.preventDefault();
-        this.classList.toggle('is-active');
-        $(".personal-sitebar").slideToggle();
-    }, false);
-
-    //faq
-    const items = document.querySelectorAll(".accordion a");
-
-    function toggleAccordion(){
-        this.classList.toggle('active');
-        this.nextElementSibling.classList.toggle('active');
-    }
-
-    items.forEach(item => item.addEventListener('click', toggleAccordion));
-
-
     //mob menu
     $('.menu-button').on('click', function() {
 
         $(this).toggleClass('active');
         $('.main-header__topline_nav').stop(true, true).slideToggle();
-
-
-
     });
-
     // form
     $('.form_style').styler({
         selectSearch: true
     });
-
-
-
     //animated
     $('.car_help').addClass('animated bounceInLeft');
     $('.main-serviced__img-car').addClass('animated bounceInRight');
+    // lk nav
+    $('.nav-trigger').on('click', function() {
 
+        $(this).toggleClass('is-active');
+        $(".personal-sitebar").slideToggle();
+    });
+    //faq
+    $('.accordion a').on('click', function() {
+
+        $(this).toggleClass('active');
+        $(this).next(".content").toggleClass('active');
+    });
 });
+
+
+
+
+

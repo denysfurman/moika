@@ -18,281 +18,142 @@
                 //= components/lk_menu.html
             </div>
 
-            <div class="col-xl-9">
-                <div class="personal_main">
+            <div class="col-xl-7">
+                <div class="personal_main ">
                     <div class="personal_main_title">
-                        List of bookings
+                        bookings
                     </div>
+                    <form action="" class="bookings_form">
+                        <span class="bookings_form_inform">*Tell us a little bit more about yourself</span>
+                        <div class="bookings_form_item">
+                            <label for="#">First name</label>
+                            <input type="text" placeholder="Write">
+                        </div>
 
-                    <form class="personal_main_buttons">
-                        <div class="row justify-content-end">
-                            <div class="col-md-8">
-                                <div class="personal_search">
-                                    <input type="text" placeholder="Type name...">
-                                    <button><img src="../img/search.svg" alt=""></button>
+                        <div class="bookings_form_item">
+                            <label for="#">Last name</label>
+                            <input type="text" placeholder="Write">
+                        </div>
+
+                        <div class="bookings_form_item select_number">
+                            <label for="#">Phone number</label>
+                            <select name="#" id="" class="form_style">
+                                <option value="#">UA</option>
+                                <option value="#">SWE</option>
+                                <option value="#">GER</option>
+                                <option value="#">USA</option>
+
+                            </select>
+                            <input type="text" placeholder="+380976894078">
+                        </div>
+                        <span class="bookings_form_inform">*Where will we come?</span>
+                        <div class="bookings_form_item select_all">
+                            <label for="#">Adress</label>
+                            <select name="#" id="" class="form_style">
+                                <option value="#">Vacation home (7605 California state route 2, West Hollyood, Kalifornien, USA)</option>
+                                <option value="#">Lorem ipsum dolor sit 2</option>
+                                <option value="#">Lorem ipsum dolor sit 3</option>
+                                <option value="#">Lorem ipsum dolor sit 4</option>
+
+                            </select>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="#" class="button_blue">Add adress</a>
+                            </div>
+                        </div>
+                        <span class="bookings_form_inform">*What do you need washed?</span>
+                        <div class="bookings_form_item_inf">
+                            <label for="#"><input type="checkbox" class="form_style"> <b>Personal</b> BMW ,black </label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="#" class="button_blue">Add car</a>
+                            </div>
+                        </div>
+                        <span class="bookings_form_inform">*When would you like us to come?</span>
+                        <div class="bookings_form_item_inf">
+                            <span>You need to select an address and a package to see what slots are available</span>
+                        </div>
+                        <span class="bookings_form_inform">*What do you need washed?</span>
+                        <div class="bookings_form_item_inf">
+                            <label for="#"><input type="checkbox" class="form_style"> <b>Personal</b> BMW ,black </label>
+                            <p>Exceptional limited time discount!The Outright package is <b>$30</b>  off at <b>$159</b> </p>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="price-section__item booking_tarif_item item_1">
+                                    <div class="price-section__item_icon">
+                                        <span>$29</span>
+                                    </div>
+                                    <div class="price-section__item_title">
+                                        Lavish
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
-                                <a href="#" class="button_red">Delete Selected</a>
+
+                            <div class="col-xl-3 col-md-6">
+                                <div class="price-section__item booking_tarif_item item_2">
+                                    <div class="price-section__item_icon price_icon_2">
+                                        <span>$99</span>
+                                    </div>
+                                    <div class="price-section__item_title">
+                                        Reveal
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="price-section__item booking_tarif_item item_3 ">
+                                    <div class="price-section__item_icon price_icon_3">
+                                        <span>$159</span>
+                                    </div>
+                                    <div class="price-section__item_title">
+                                        Outright
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="price-section__item booking_tarif_item item_4">
+
+                                    <div class="price-section__item_icon price_icon_4">
+                                        <span>$229</span>
+                                    </div>
+                                    <div class="price-section__item_title">
+                                        Ace
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
+
+
+
                     </form>
 
-                    <div class="table-responsive">
-                        <table class="table table_bookings">
 
-                            <thead>
-                            <tr>
-                                <th>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </th>
-                                <th><a href="#" class="up">Date and time</a></th>
-                                <th><a href="#" class="up">Address</a></th>
-                                <th><a href="#" class="up">Car</a></th>
-                                <th><a href="#" class="up">Car number</a></th>
-                                <th><a href="#" class="up">Price card</a></th>
-                                <th><a href="#" class="up">Add-on</a></th>
-                                <th class="table_cart_button"><a href="#" class="down">Action</a></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
 
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
-
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
-
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
-
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
-
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
-
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
-
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
-
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
-
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="table_checkbox">
-                                        <input type="checkbox" class="form_style">
-                                    </div>
-                                </td>
-
-                                <td>Personal</td>
-                                <td>There are many variations</td>
-                                <td>BMW, black</td>
-                                <td>JYF 368</td>
-                                <td>Lavish</td>
-                                <td></td>
-                                <td class="table_cart_button">
-                                    <div class="cart_buttons">
-                                        <a href="#" class="button_red">Delete</a>
-                                        <a href="#" class="button_blue">Edit</a>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div><!--end of .table-responsive-->
-
-                    <div class="table_pagination">
-                        <ul>
-                            <li><a href="#" class="active">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">10</a></li>
-                            <li><a href="#"><i class="icon-icon_33"></i></a></li>
-                        </ul>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="personal_main">
+                    <div class="personal_main_title">
+                        Summary
                     </div>
+                    1. Washos is a cashless service. Transactions take place online, and you are only charge at the end of job
+
+                    2. Tipping is not included and not mandatory. You can tip through the website after your booking
+
+                    3. You can reschedule / cancel your service for free until 2 hours before the job
+
+                    4. Once on site, feel free to let our technician know if you want to add additional services
+
+                    5. Our platform is totally secure, we'll never sell your info to third parties
+
+
                 </div>
             </div>
         </div>
