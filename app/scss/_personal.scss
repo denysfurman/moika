@@ -274,3 +274,22 @@
     }
   }
 }
+
+.fancy_box{
+  display: none;
+  width: 100%;
+  max-width: 700px;
+  padding-top: 30px;
+  border-radius: 5px;
+  .bookings_form_inform{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  .bookings_form_item label {
+    width: 213px;
+  }
+}

@@ -14,11 +14,21 @@ $(function() {
             $(".main-header .main-header__topline , .text-header .main-header__topline").removeClass("header-sroll");
         }
     });
+
+    //popup
+    $(".fancybox_text").fancybox({
+        toolbar: false,
+        protect: true,
+        touch: false,
+        smallBtn: true
+
+    })
     //mob menu
     $('.menu-button').on('click', function() {
 
         $(this).toggleClass('active');
         $('.main-header__topline_nav').stop(true, true).slideToggle();
+        return false;
     });
     // form
     $('.form_style').styler({

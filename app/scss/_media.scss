@@ -266,6 +266,9 @@
     border: none;
     margin: 0;
   }
+  .password_form {
+    padding-left: 0;
+  }
   .main-header_center form {
     flex-direction: column;
     -ms-flex-direction: column;
@@ -463,6 +466,15 @@
   }
   .bookings_form_item .jq-selectbox__select {
     padding-left: 10px;
+  }
+  .bookings_form_item label {
+    width: 100%;
+  }
+  .seen_pass {
+    margin-left: 0;
+    position: absolute;
+    right: 18px;
+    top: 43px;
   }
 }
 

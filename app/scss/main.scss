@@ -405,6 +405,18 @@ body {
   margin-top: 20px;
   width: 100%;
   color: #fff;
+  border: none;
+  outline: none!important;
+  &.disable{
+    background-color: #f9f9f9;
+    color: #444;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.17);
+
+    &:hover{
+      background-color: #f9f9f9;
+      color: #444;
+    }
+  }
   &:hover{
     color: #fff;
     background-color: #28a2df;

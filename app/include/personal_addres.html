@@ -1,53 +1,5 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-
-    <meta charset="utf-8">
-
-
-    <title>Bringwash</title>
-    <meta name="description" content="">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Template Basic Images Start -->
-    <meta property="og:image" content="path/to/image.jpg">
-    <link rel="icon" href="../img/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon-180x180.png">
-    <link rel="stylesheet" href="../libs/font-awesome/css/fontawesome-all.css">
-    <!-- Template Basic Images End -->
-
-    <!-- Custom Browsers Color Start -->
-    <meta name="theme-color" content="#000">
-    <!-- Custom Browsers Color End -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,700i,800&amp;subset=latin-ext" rel="stylesheet">
-
-    <link rel="stylesheet" href="../css/main.min.css">
-
-</head>
-<body>
-<header class="lk-header">
-    <div class="container-fluid">
-        <div class="main-header__topline">
-            <a href="#" class="main-header__topline_logo">Bringwash</a>
-            <nav class="main-header__topline_nav">
-                <ul>
-                    <li><a href="#" class="active">home</a></li>
-                    <li><a href="#">cities</a></li>
-                    <li><a href="#">help/support</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li class="personal_link"><a href="#"><img src="../img/chel.jpg" alt=""> <i class="icon-icon_22"></i></a> </li>
-
-                </ul>
-            </nav>
-            <a href="#" class="menu-button">Menu</a>
-        </div>
-
-
-    </div>
-</header>
+//= components/head.html
+//= components/header_lk.html
 
 <div class="breakbrains">
     <div class="container-fluid">
@@ -63,52 +15,47 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-3 col-lg-12">
-                
-                <button class="nav-trigger" type="button">
-                    <span></span>
-                </button>
-                <div class="personal-sitebar">
-                    <div class="personal-sitebar__foto">
-                        <div class="personal-sitebar__foto_img">
-                            <img src="../img/chel.jpg" alt="">
-                        </div>
-                        <input type="file" id="pers_foto">
-                        <label for="pers_foto" class="add_persfoto_label"><img src="../img/camera.png" alt=""></label>
-                        <a href="#" class="dell_foto"><img src="../img/delete-picture.png" alt=""></a>
-                        <span>Ivanov Ivan </span>
-                    </div>
-                
-                    <div class="personal-sitebar__menu">
-                        <ul>
-                            <li><a href="#"><i class="icon-user"></i> Profile</a></li>
-                            <li><a href="#"><i class="icon-day-23"></i> Bookings</a></li>
-                            <li><a href="#" class="active"><i class="icon-car2"></i> Cars</a></li>
-                            <li><a href="#"><i class="icon-placeholder"></i> Addresses</a></li>
-                            <li><a href="#"><i class="icon-credit-card"></i> Cards</a></li>
-                            <li><a href="#"><i class="icon-like"></i> Refer your friends</a></li>
-                            <li><a href="#"><i class="icon-power-button"></i> Log out</a></li>
-                        </ul>
-                    </div>
-                    <div class="personal-sitebar__meet">
-                        <a href="#">
-                            <img src="../img/handshake.svg" alt="">
-                            <span> <span> Make </span> an appointment</span>
-                        </a>
-                    </div>
-                </div>
+                //= components/lk_menu.html
             </div>
 
             <div class="col-xl-9">
                 <div class="personal_main">
                     <div class="personal_main_title">
-                        Cards
+                        Addresses
                     </div>
 
                     <form class="personal_main_buttons">
                         <div class="row justify-content-end">
-                            <div class="col-md-3">
-                                <a href="#" class="button_blue">Add card</a>
+                            <div class=" col-xl-6 col-md-5">
+                                <div class="personal_search">
+                                    <input type="text" placeholder="Type name...">
+                                    <button><img src="../img/search.svg" alt=""></button>
+                                </div>
                             </div>
+                            <div class="col-md-3 col-xl-2">
+                                <a href="#add_adress" class="button_blue fancybox_text">Add new adress</a>
+                            </div>
+
+                            <div id="add_adress" class="fancy_box">
+                                <form action="" class="bookings_form add_adress">
+                                    <span class="bookings_form_inform">Add new adress</span>
+
+
+                                    <div class="bookings_form_item">
+                                        <label >*Enter your full adress (including zipcode)</label>
+                                        <input type="text" placeholder="Write">
+
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-3">
+                                            <input type="submit" class="button_blue" value="Add">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
 
                             <div class="col-md-4">
                                 <a href="#" class="button_red">Delete Selected</a>
@@ -120,16 +67,16 @@
                         <table class="table table_cards">
 
                             <thead>
-                                <tr>
-                                    <th>
-                                        <div class="table_checkbox">
-                                            <input type="checkbox" class="form_style">
-                                        </div>
-                                    </th>
-                                    <th><a href="#" class="up">Number</a></th>
-                                    <th><a href="#" class="up">*Exp month</a></th>
-                                    <th class="table_cart_button"><a href="#" class="down">Action</a></th>
-                                </tr>
+                            <tr>
+                                <th>
+                                    <div class="table_checkbox">
+                                        <input type="checkbox" class="form_style">
+                                    </div>
+                                </th>
+                                <th><a href="#" class="up">Label</a></th>
+                                <th><a href="#" class="up">Full adress</a></th>
+                                <th class="table_cart_button"><a href="#" class="down">Action</a></th>
+                            </tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -138,15 +85,14 @@
                                             <input type="checkbox" class="form_style">
                                         </div>
                                     </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
                                     <td class="table_cart_button">
                                         <div class="cart_buttons">
                                             <a href="#" class="button_red">Delete</a>
                                             <a href="#" class="button_blue">Edit</a>
                                         </div>
                                     </td>
-
                                 </tr>
 
                                 <tr>
@@ -155,15 +101,31 @@
                                             <input type="checkbox" class="form_style">
                                         </div>
                                     </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
                                     <td class="table_cart_button">
                                         <div class="cart_buttons">
                                             <a href="#" class="button_red">Delete</a>
                                             <a href="#" class="button_blue">Edit</a>
                                         </div>
                                     </td>
+                                </tr>
 
+
+                                <tr>
+                                    <td>
+                                        <div class="table_checkbox">
+                                            <input type="checkbox" class="form_style">
+                                        </div>
+                                    </td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
+                                    <td class="table_cart_button">
+                                        <div class="cart_buttons">
+                                            <a href="#" class="button_red">Delete</a>
+                                            <a href="#" class="button_blue">Edit</a>
+                                        </div>
+                                    </td>
                                 </tr>
 
                                 <tr>
@@ -172,15 +134,14 @@
                                             <input type="checkbox" class="form_style">
                                         </div>
                                     </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
                                     <td class="table_cart_button">
                                         <div class="cart_buttons">
                                             <a href="#" class="button_red">Delete</a>
                                             <a href="#" class="button_blue">Edit</a>
                                         </div>
                                     </td>
-
                                 </tr>
 
                                 <tr>
@@ -189,15 +150,14 @@
                                             <input type="checkbox" class="form_style">
                                         </div>
                                     </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
                                     <td class="table_cart_button">
                                         <div class="cart_buttons">
                                             <a href="#" class="button_red">Delete</a>
                                             <a href="#" class="button_blue">Edit</a>
                                         </div>
                                     </td>
-
                                 </tr>
 
                                 <tr>
@@ -206,15 +166,14 @@
                                             <input type="checkbox" class="form_style">
                                         </div>
                                     </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
                                     <td class="table_cart_button">
                                         <div class="cart_buttons">
                                             <a href="#" class="button_red">Delete</a>
                                             <a href="#" class="button_blue">Edit</a>
                                         </div>
                                     </td>
-
                                 </tr>
 
                                 <tr>
@@ -223,15 +182,14 @@
                                             <input type="checkbox" class="form_style">
                                         </div>
                                     </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
                                     <td class="table_cart_button">
                                         <div class="cart_buttons">
                                             <a href="#" class="button_red">Delete</a>
                                             <a href="#" class="button_blue">Edit</a>
                                         </div>
                                     </td>
-
                                 </tr>
 
                                 <tr>
@@ -240,15 +198,14 @@
                                             <input type="checkbox" class="form_style">
                                         </div>
                                     </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
                                     <td class="table_cart_button">
                                         <div class="cart_buttons">
                                             <a href="#" class="button_red">Delete</a>
                                             <a href="#" class="button_blue">Edit</a>
                                         </div>
                                     </td>
-
                                 </tr>
 
                                 <tr>
@@ -257,15 +214,14 @@
                                             <input type="checkbox" class="form_style">
                                         </div>
                                     </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
                                     <td class="table_cart_button">
                                         <div class="cart_buttons">
                                             <a href="#" class="button_red">Delete</a>
                                             <a href="#" class="button_blue">Edit</a>
                                         </div>
                                     </td>
-
                                 </tr>
 
                                 <tr>
@@ -274,25 +230,8 @@
                                             <input type="checkbox" class="form_style">
                                         </div>
                                     </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
-                                    <td class="table_cart_button">
-                                        <div class="cart_buttons">
-                                            <a href="#" class="button_red">Delete</a>
-                                            <a href="#" class="button_blue">Edit</a>
-                                        </div>
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <div class="table_checkbox">
-                                            <input type="checkbox" class="form_style">
-                                        </div>
-                                    </td>
-                                    <td>556 663 *** 3356</td>
-                                    <td>09.03/2017</td>
+                                    <td>Personal</td>
+                                    <td>There are many variations of passages of Lorem Ipsum available</td>
                                     <td class="table_cart_button">
                                         <div class="cart_buttons">
                                             <a href="#" class="button_red">Delete</a>
@@ -322,92 +261,5 @@
 
 </div>
 
-<footer class="footer-lk">
+//= components/footer_lk.html
 
-    <div class="container">
-        <a href="#" class="footer_logo">Bringwash</a>
-        <div class="row justify-content-between">
-            <div class="col-md-4">
-                <div class="footer_link_title"><i class="fa fa-question-circle"></i>
-
-                    Frequently asked questions</div>
-
-                <ul class="footer_link">
-                    <li><a href="#"> How does booking work?</a></li>
-                    <li><a href="#">Do I need to have any equipment?</a></li>
-                    <li><a href="#">How do you access my car?</a></li>
-                    <li><a href="#">Who will come to my place?</a></li>
-                    <li><a href="#">Who is behind Washos?</a></li>
-                    <li><a href="#">See all questions</a></li>
-                </ul>
-
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <div class="footer_link_title"><i class="fab fa-gg-circle"></i>
-
-                    Mobile Car wash & detailing</div>
-                <ul class="footer_link">
-                    <li><a href="#">Lavish Mobile Car Wash</a></li>
-                    <li><a href="#">Reveal Mobile Car Detailing</a></li>
-                    <li><a href="#">Outright Mobile Car Detailing</a></li>
-                    <li><a href="#">Ace Mobile Car Detailing</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-3 col-xl-2 col-lg-3">
-                <div class="footer_link_title"><i class="fa fa-exclamation-circle"></i> Information</div>
-                <ul class="footer_link">
-                    <li><a href="#">Our Pricing</a></li>
-                    <li><a href="#">About Washos</a></li>
-                    <li><a href="#">Offer a gift card</a></li>
-                    <li><a href="#">Terms of sale</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="socials socials_footer">
-            <a class="socials__link"  href="#" target="_blank"><i class="icon-facebook-logo-button"></i></a>
-            <a class="socials__link" href="#" target="_blank"><i class="icon-instagram-logo"></i></a>
-
-
-        </div>
-        <div class="footer_copying">
-            © Copyright 2018. All Rights Reserved111 Your Street, Your City, Your State 11111, Your Country <br>
-            www.washos.com
-        </div>
-    </div>
-</footer>
-
-<div class="all_pages">
-    <div class="page_point"></div>
-    <ul class="page_list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">about us</a></li>
-        <li><a href="faq.html">faq</a></li>
-        <li><a href="text.html">text</a></li>
-        <li><a href="pricing.html">pricing</a></li>
-        <li><a href="login.html">login</a></li>
-        <li><a href="sing.html">sing</a></li>
-        <li><a href="personal_cards.html">personal_cards</a></li>
-        <li><a href="personal_booking.html">personal_booking</a></li>
-        <li><a href="personal_cars.html">personal_cars</a></li>
-        <li><a href="personal_addres.html">personal_addres</a></li>
-        <li><a href="booking.html">booking</a></li>
-        <li><a href="profile.html">profile</a></li>
-
-    </ul>
-</div>
-
-
-
-<script src='../libs/jquery/dist/jquery.min.js'></script>
-<script src='../libs/dist/owl.carousel.min.js'></script>
-<script src='../libs/form_style/jquery.formstyler.js'></script>
-<script src='../libs/waypoints/waypoints.min.js'></script>
-<script src='../libs/fancybox/jquery.fancybox.min.js'></script>
-<script src='../libs/animate/animate-css.js'></script>
-
-<script src="../js/common.js"></script>
-</body>
-</html>
