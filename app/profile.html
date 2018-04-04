@@ -28,8 +28,8 @@
 
 </head>
 <body>
-<header class="text-header">
-    <div class="container">
+<header class="lk-header">
+    <div class="container-fluid">
         <div class="main-header__topline">
             <a href="#" class="main-header__topline_logo">Bringwash</a>
             <nav class="main-header__topline_nav">
@@ -38,9 +38,8 @@
                     <li><a href="#">cities</a></li>
                     <li><a href="#">help/support</a></li>
                     <li><a href="#">contact</a></li>
+                    <li class="personal_link"><a href="#"><img src="../img/chel.jpg" alt=""> <i class="icon-icon_22"></i></a> </li>
 
-                    <li class="login_link"><a href="#">log in</a></li>
-                    <li class="registration_link"><a href="#">registration</a></li>
                 </ul>
             </nav>
             <a href="#" class="menu-button">Menu</a>
@@ -50,54 +49,104 @@
     </div>
 </header>
 
-<div class="text_page">
-    <div class="container">
-        <div class="text_page_title">
-            <h1>FAQ</h1>
-            <span class="text_page_title_descr">
-                Frequently asked questions
-            </span>
-            <span class="text_page_title_line"></span>
-        </div>
+<div class="breakbrains">
+    <div class="container-fluid">
+        <ul>
+            <li><a href="#"> <i class="icon-icon_15"></i> Home</a><span>\</span></li>
+            <li><a href="#" class="active">Profile</a></li>
 
-        <div class="accordion">
-            <div class="accordion-item">
-                <a>How do I schedule an appointment?</a>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <a>How do I pay for the service?</a>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <a>Do I need to give the detailer access to water or electricity?</a>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <a>Do I need to be present before, during or after the service?</a>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <a>Can you service the vehicle in any place?</a>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                </div>
-            </div>
-
-        </div>
+        </ul>
 
     </div>
 </div>
+<div class="lk_page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-lg-12">
+                
+                <button class="nav-trigger" type="button">
+                    <span></span>
+                </button>
+                <div class="personal-sitebar">
+                    <div class="personal-sitebar__foto">
+                        <div class="personal-sitebar__foto_img">
+                            <img src="../img/chel.jpg" alt="">
+                        </div>
+                        <input type="file" id="pers_foto">
+                        <label for="pers_foto" class="add_persfoto_label"><img src="../img/camera.png" alt=""></label>
+                        <a href="#" class="dell_foto"><img src="../img/delete-picture.png" alt=""></a>
+                        <span>Ivanov Ivan </span>
+                    </div>
+                
+                    <div class="personal-sitebar__menu">
+                        <ul>
+                            <li><a href="#"><i class="icon-user"></i> Profile</a></li>
+                            <li><a href="#"><i class="icon-day-23"></i> Bookings</a></li>
+                            <li><a href="#" class="active"><i class="icon-car2"></i> Cars</a></li>
+                            <li><a href="#"><i class="icon-placeholder"></i> Addresses</a></li>
+                            <li><a href="#"><i class="icon-credit-card"></i> Cards</a></li>
+                            <li><a href="#"><i class="icon-like"></i> Refer your friends</a></li>
+                            <li><a href="#"><i class="icon-power-button"></i> Log out</a></li>
+                        </ul>
+                    </div>
+                    <div class="personal-sitebar__meet">
+                        <a href="#">
+                            <img src="../img/handshake.svg" alt="">
+                            <span> <span> Make </span> an appointment</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<footer>
+            <div class="col-xl-9">
+                <div class="personal_main ">
+                    <div class="personal_main_title">
+                        Profile information
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form action="" class="bookings_form profile_form">
+                                <span class="bookings_form_inform">*Tell us a little bit more about yourself</span>
+                                <div class="bookings_form_item">
+                                    <label >First name</label>
+                                    <input type="text" placeholder="Write">
+                                </div>
+
+                                <div class="bookings_form_item">
+                                    <label >Last name</label>
+                                    <input type="text" placeholder="Write">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-6">
+                            <form action="" class="bookings_form profile_form">
+                                <span class="bookings_form_inform">*Tell us a little bit more about yourself</span>
+                                <div class="bookings_form_item">
+                                    <label >First name</label>
+                                    <input type="text" placeholder="Write">
+                                </div>
+
+                                <div class="bookings_form_item">
+                                    <label >Last name</label>
+                                    <input type="text" placeholder="Write">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer-lk">
 
     <div class="container">
         <a href="#" class="footer_logo">Bringwash</a>
@@ -169,7 +218,6 @@
         <li><a href="personal_booking.html">personal_booking</a></li>
         <li><a href="personal_cars.html">personal_cars</a></li>
         <li><a href="booking.html">booking</a></li>
-
     </ul>
 </div>
 

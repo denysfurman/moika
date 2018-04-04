@@ -19,9 +19,9 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		// open: false,
-		// tunnel: true,
-		// tunnel: "proje", //Demonstration page: http://projectname.localtunnel.me
+		 // open: false,
+		// gtunnel: true,
+		// gtunnel: "proje", //Demonstration page: http://projectname.localtunnel.me
 	})
 });
 
