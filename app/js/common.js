@@ -24,6 +24,14 @@ $(function() {
 
     })
     //mob menu
+    $('.personal_link a').on('click', function() {
+
+
+        $('.personal_link_inform').stop(true, true).slideToggle();
+        return false;
+    });
+
+    //personal acount
     $('.menu-button').on('click', function() {
 
         $(this).toggleClass('active');
