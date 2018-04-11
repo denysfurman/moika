@@ -10,19 +10,25 @@
         </div>
 
         <div class="login-form">
-            <form action="#">
+
+            <form action="/ajax/user/registration" id="registration-form">
                 <label for="login-form-mail">E-mail</label>
-                <input type="email" id="login-form-mail" placeholder="Input your e-mail here">
+                <div id="error_register_email" class="alert alert-danger error" ></div>
+                <input type="email" name="email" required="" id="login-form-mail" placeholder="Input your e-mail here">
+
                 <label for="login-form-pass">Password</label>
-                <input type="password" id="login-form-pass" placeholder="Input your password here">
+                <div id="error_register_password" class="alert alert-danger error"></div>
+                <input type="password" name="password" required="" id="login-form-pass" placeholder="Input your password here">
+
                 <label for="login-form-select">How did you hear about us?</label>
-                <select name="#" id="login-form-select" class="form_style">
-                    <option value="#">Lorem ipsum</option>
-                    <option value="#">Lorem ipsum 2</option>
-                    <option value="#">Lorem ipsum 3</option>
+                <div id="error_register_source" class="alert alert-danger error"></div>
+
+                <select name="source" required id="login-form-select" class="form_style">
+                    <option value="">Lorem ipsum</option>
+                    <option value="1">Lorem ipsum 2</option>
+                    <option value="2">Lorem ipsum 3</option>
                 </select>
-
-
+                <div id="status_register" class="alert alert-danger"></div>
                 <input type="submit" class="button_blue" value="Send">
             </form>
         </div>

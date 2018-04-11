@@ -252,6 +252,20 @@
     font-size: 9px;
     margin-left: 10px;
   }
+  .personal_link_inform{
+    ul{
+      display: inline-block!important;
+      li{
+        width: 100%;
+        display: inline-block;
+      }
+
+    }
+    a{
+      color: #000!important;
+    }
+
+  }
 
 
 }

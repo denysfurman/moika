@@ -31,7 +31,7 @@
 <header class="text-header">
     <div class="container">
         <div class="main-header__topline">
-            <a href="#" class="main-header__topline_logo">Bringwash</a>
+            <a href="#" class="main-header__topline_logo"><img src="img/logo_m.png" alt=""></a>
             <nav class="main-header__topline_nav">
                 <ul>
                     <li><a href="#" class="active">home</a></li>
@@ -59,19 +59,25 @@
         </div>
 
         <div class="login-form">
-            <form action="#">
+
+            <form action="/ajax/user/registration" id="registration-form">
                 <label for="login-form-mail">E-mail</label>
-                <input type="email" id="login-form-mail" placeholder="Input your e-mail here">
+                <div id="error_register_email" class="alert alert-danger error" ></div>
+                <input type="email" name="email" required="" id="login-form-mail" placeholder="Input your e-mail here">
+
                 <label for="login-form-pass">Password</label>
-                <input type="password" id="login-form-pass" placeholder="Input your password here">
+                <div id="error_register_password" class="alert alert-danger error"></div>
+                <input type="password" name="password" required="" id="login-form-pass" placeholder="Input your password here">
+
                 <label for="login-form-select">How did you hear about us?</label>
-                <select name="#" id="login-form-select" class="form_style">
-                    <option value="#">Lorem ipsum</option>
-                    <option value="#">Lorem ipsum 2</option>
-                    <option value="#">Lorem ipsum 3</option>
+                <div id="error_register_source" class="alert alert-danger error"></div>
+
+                <select name="source" required id="login-form-select" class="form_style">
+                    <option value="">Lorem ipsum</option>
+                    <option value="1">Lorem ipsum 2</option>
+                    <option value="2">Lorem ipsum 3</option>
                 </select>
-
-
+                <div id="status_register" class="alert alert-danger"></div>
                 <input type="submit" class="button_blue" value="Send">
             </form>
         </div>
@@ -82,7 +88,7 @@
 <footer>
 
     <div class="container">
-        <a href="#" class="footer_logo">Bringwash</a>
+        <a href="#" class="footer_logo"><img src="img/logo_m.png" alt=""></a>
         <div class="row justify-content-between">
             <div class="col-md-4">
                 <div class="footer_link_title"><i class="fa fa-question-circle"></i>
@@ -165,7 +171,7 @@
 <script src='../libs/waypoints/waypoints.min.js'></script>
 <script src='../libs/fancybox/jquery.fancybox.min.js'></script>
 <script src='../libs/animate/animate-css.js'></script>
-
+<script src="../js/jquery.validate.js"></script>
 <script src="../js/common.js"></script>
 </body>
 </html>

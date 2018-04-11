@@ -31,7 +31,7 @@
 <header class="text-header">
     <div class="container">
         <div class="main-header__topline">
-            <a href="#" class="main-header__topline_logo">Bringwash</a>
+            <a href="#" class="main-header__topline_logo"><img src="img/logo_m.png" alt=""></a>
             <nav class="main-header__topline_nav">
                 <ul>
                     <li><a href="#" class="active">home</a></li>
@@ -57,20 +57,29 @@
                 Don't have an account? <a href="#">Sign up!</a>
             </span>
         </div>
-        
+
         <div class="login-form">
-            <form action="#">
-                <label for="login-form-mail">E-mail</label>
-                <input type="email" id="login-form-mail" placeholder="Input your e-mail here">
-                <label for="login-form-pass">Password</label>
-                <input type="password" id="login-form-pass" placeholder="Input your password here">
-                <div class="check_wrap">
-                    <label for="login_check"><input id="login_check" class="form_style" type="checkbox">  Keep me signed in.</label>
-                    <a href="#">Forgotten password?</a>
+            <form action="/ajax/user/login" id="login_form" role="form" class="form-inline">
+                <div class="form-group">
+                    <label for="email">Ваш e-mail <span>*</span></label>
+                    <div id="error_login_email" class="alert alert-danger error" ></div>
+                    <input type="email" name="email" required class="form-control" id="email">
                 </div>
 
-                <input type="submit" class="button_blue" value="Send">
-            </form>            
+                <div class="form-group pass">
+                    <label for="pass">Пароль <span>*</span></label>
+                    <div id="error_login_password" class="alert alert-danger error"></div>
+                    <input type="password" name="password" required class="form-control" id="pass">
+                </div>
+
+                <div class="check_wrap">
+                    <label for="login_check"><input id="login_check" name="remember" class="form_style" type="checkbox" >  Keep me signed in.</label>
+                    <a href="/recovery">Forgotten password?</a>
+                </div>
+                <div id="status_login" class="alert alert-danger"></div>
+                <input type="submit" class="btn button_blue" value="ВОЙТИ">
+            </form>
+
         </div>
     </div>
 
@@ -79,7 +88,7 @@
 <footer>
 
     <div class="container">
-        <a href="#" class="footer_logo">Bringwash</a>
+        <a href="#" class="footer_logo"><img src="img/logo_m.png" alt=""></a>
         <div class="row justify-content-between">
             <div class="col-md-4">
                 <div class="footer_link_title"><i class="fa fa-question-circle"></i>
@@ -162,7 +171,7 @@
 <script src='../libs/waypoints/waypoints.min.js'></script>
 <script src='../libs/fancybox/jquery.fancybox.min.js'></script>
 <script src='../libs/animate/animate-css.js'></script>
-
+<script src="../js/jquery.validate.js"></script>
 <script src="../js/common.js"></script>
 </body>
 </html>

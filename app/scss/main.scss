@@ -500,6 +500,17 @@ table{
 
   background-image: url(../img/check_bl.svg);
 }
+.alert.error{
+  color: #ff0000;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+#status_login{
+  margin-top: 20px;
+}
+#status_register{
+  margin-top: 20px;
+}
 
 @import "main_page";
 @import "footer";
